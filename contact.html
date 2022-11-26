@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png">
+    <title> EDFUniversity Website Offical</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@0,200;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="sub-header">
+    <nav >
+        <a href="#" id="a"><h2><span><i class="fa-sharp fa-solid fa-school" id="log-main"></i></span><span id="edf" > EDF </span>University</h2></a>
+        <div class="nav-link">
+            <i class="fa-sharp fa-solid fa-xmark" id="menu-cross-logo" ></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="cources.html">COURSE</a></li>
+                <li><a href="blogs.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menu-open-logo"  ></i>
+    </nav>
+<h1>Contact Us</h1>
+<a href="" class="vist-btn">EXPLORE NOW!</a>
+</section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462118.02491053584!2d67.15546194999999!3d25.193202399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1668972396467!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="contact-row">
+        <div class="contact-cloum">
+            <div>
+                <i class="fa-solid fa-house" id="contact-logo"></i>
+                <span>
+                    <h5>XYZ Road , ABD Building</h5>
+                    <p>Karachi City In Pakistan</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-cloum">
+            <div>
+                <i class="fa-solid fa-envelope" id="contact-logo"></i>
+                <span>
+                    <h5>abcd@gmail.com</h5>
+                    <p>Email Us Your Query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-cloum">
+            <div>
+                <i class="fa-solid fa-phone" id="contact-logo"></i>
+                <span>
+                    <h5>+92-123456789</h5>
+                    <p>Mon-To-Fri, 10PM TO 7AM</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-cloum">
+            <form class="comment-form">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your eamil" required>
+                <input type="text" placeholder="Enter your subject" required>
+                <textarea  rows="7" placeholder="Enter message" required ></textarea>
+                <button type="submit" class="from-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis nemo iure laboriosam optio, unde suscipit, quo provident explicabo quasi maxime possimus officia natus, quae voluptatibus? Consequatur dolore quod at.</p>
+    <div class="icons">
+        <i class ="fa-brands fa-instagram" id="logos-icon"></i>
+        <i class="fa-brands fa-tiktok" id="logos-icon"> </i>
+        <i class="fa-brands fa-twitter" id="logos-icon"></i>
+        <i class="fa-brands fa-linkedin-in" id="logos-icon"></i>
+        <i class="fa-brands fa-facebook-f" id="logos-icon"></i>
+    </div>
+    <p>Made By <span>Muhammad Ubaid Uddin Sheikh</span>
+    </p>
+</section>
+<script>
+    let navigation = document.querySelector("nav");
+    let niv = document.querySelector(".nav-link");
+    let btn = document.querySelector("#menu-cross-logo");
+    let btn2 =  document.querySelector("#menu-open-logo");
+    btn.addEventListener("click",function(){
+        niv.style.right="-200px";
+    })
+    btn2.addEventListener("click",function(){
+        niv.style.right="0"
+    })
+    </script>
+</body>
+</html>

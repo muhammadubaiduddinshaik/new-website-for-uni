@@ -1,0 +1,864 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+
+    }
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(./328-3285522_university-of-sydney.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3% 10%;
+    }
+    .nav-link{
+        flex: 1;
+        text-align: right;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+    .nav-link ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-family:  sans-serif;
+
+    }
+    nav h2{
+        
+        font-size: 30px;
+        font-family: cursive;
+        text-decoration: none;
+        color: white;
+    }
+    #a{
+        text-decoration: none;
+    }
+    .nav-link ul li::after{
+        width: 0%;
+        content: "";
+        height: 2px;
+        margin: auto;
+        display: block;
+        background-color: #f44336;
+        transition: 0.6s;
+    }
+    .nav-link ul li:hover::after{
+        width: 100%;
+    }
+    .nav-link a:hover{
+        color: #f44336;
+        transition: 0.5s;
+    }
+    #log-main{
+        color: #f44336;
+        font-size: 47px;
+    }
+    #edf{
+        color: #f44336;
+    }
+    nav h2::after{
+        width: 100%;
+        content: "";
+        height: 2px;
+        margin: auto;
+        display: block;
+        background-color: #f44336;
+        transition: 0.6s;
+    }
+    nav h2:hover::after{
+        width: 0%;
+    }
+    .dispay-text{
+        width: 90%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        color: white;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+    }
+    .dispay-text h1{
+        font-size: 44px;
+        font-family: system-ui;
+        font-style: italic;
+    }
+    .dispay-text span{
+        color: #f44336;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .dispay-text p{
+    
+        font-size: 14px;
+        padding: 20px;
+        font-family: sans-serif;
+        line-height: 29px;
+    }
+    .vist-btn{
+        border-radius: 7px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background: transparent;
+        padding: 17px 27px;
+        border: 1px solid wheat;
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: monospace;
+        font-weight: 500;
+        box-shadow: 4px 0px 34px 14px black;
+        margin-top: 24px;
+    }
+    .vist-btn:hover{
+        color: white;
+        box-shadow: 4px 0px 34px 14px #f44336;
+        background-color: #f44336;
+        transition: 0.6s;
+    }
+    #menu-open-logo{
+        display: none;
+    }
+    #menu-cross-logo{
+        display: none;
+    }
+    .cource{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding-top: 90px;
+    }
+    .cource h1{
+        color: black;
+        font-size: 43px;
+        font-family: system-ui;
+        font-weight: 700;
+    }
+    .cource p{
+        font-size: 12px;
+        color: #777;
+        padding: 10px;
+        line-height: 22px;
+        font-weight: 800;
+        font-family: sans-serif;
+    }
+    .cource p span{
+        color: #f44336;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    .clom{
+        flex-basis: 31%;
+        margin-bottom: 5%;
+        background: #fff3f4;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px 12px;
+        transition: 0.5s;
+    }
+    .clom h3{
+        margin: 10px 0;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .global{
+        padding-top: 50px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .global h1{
+        color: black;
+        font-size: 43px;
+        font-family: system-ui;
+        font-weight: 700;
+    }
+    .global p{
+        font-size: 12px;
+        color: #777;
+        padding: 10px;
+        line-height: 22px;
+        font-weight: 800;
+        font-family: sans-serif;
+    }
+    .global p span{
+        color: #f44336;
+    }
+    .clom:hover{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    .row-facilites{
+        display: flex;
+        gap: 1.3rem;
+        flex-wrap: wrap;
+        padding: 149px;
+        margin-top: -90px;
+    }
+
+    .clom-facilites{
+        overflow: hidden;
+        box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+        border: 0.2rem solid black;
+        border-radius: 0.5rem;
+        flex: 3 1 27rem;
+        position: relative;
+    }
+
+    .row-facilites img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .row-global{
+        display: flex;
+        gap: 1.3rem;
+        flex-wrap: wrap;
+        padding: 149px;
+        margin-top: -90px;
+    }
+    .row-global img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .clom-global{
+        overflow: hidden;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+        border: 0.2rem solid black;
+        border-radius: 0.5rem;
+        flex: 1 1 30rem;
+    position: relative;
+    }
+    .caption-img{
+        text-align: center;
+        font-size: 43px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background: transparent;
+        top: 0;
+        height: 100%;
+        transition: 0.5s;
+        top: -100px;
+        font-family: sans-serif;
+    }
+    .caption-img:hover{
+        background: rgba(226, 0, 0, 0.7);
+        top:0px;
+        color: white;
+    }
+    .facilites{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .facilites h1{
+        color: black;
+        font-size: 43px;
+        font-family: system-ui;
+        font-weight: 700;
+    }
+    .facilites p{
+        font-size: 12px;
+        color: #777;
+        padding: 10px;
+        line-height: 22px;
+        font-weight: 800;
+        font-family: sans-serif;
+    }
+    .facilites span{
+        color: #f44336;
+    }
+    .professor{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .professor h1{
+        color: black;
+        font-size: 43px;
+        font-family: system-ui;
+        font-weight: 700;
+    }
+    .professor p{
+        font-size: 12px;
+        color: #777;
+        padding: 0px;
+        line-height: 22px;
+        font-weight: 800;
+        font-family: sans-serif;
+    }
+    .professor span{
+        color: #f44336;
+    }
+    .professor-row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+
+    }
+    .professor-colm{
+        cursor: pointer;
+        display: flex;
+        text-align: left;
+        flex-basis: 31%;
+        margin-bottom: 5%;
+        background: #fff3f4;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px 12px;
+        transition: 0.5s;
+    }
+    .professor-colm:hover{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    .professor-colm img{
+        border-radius: 50%;
+        height: 76px;
+        margin-left: 5px;
+        margin-right: 30px;
+
+    }
+    .professor-colm h3{
+        margin-top: 17px;
+        text-align: left;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+    #prof-logo{
+        color: #f44336;
+        padding-top: 5px;
+    }
+    .enrol-student{
+        margin: 100px auto;
+        width: 83%;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./banner-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .enrol-student h1{
+        margin-bottom: 40px;
+        padding: 0;
+        color: #fff;font-size: 35px;
+        font-family: sans-serif;
+    }
+    .footer{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .footer h1{
+        color: black;
+        font-size: 43px;
+        font-family: system-ui;
+        font-weight: 700;
+    }
+    .footer p{
+        font-size: 12px;
+        color: #777;
+        padding: 0px;
+        line-height: 22px;
+        font-weight: 800;
+        font-family: sans-serif;
+        padding: 31px;
+    }
+.icons #logos-icon{
+    /* color: #f44336; */
+    color: #3b5998;
+    font-size: large;
+    margin: 0 13px;
+    padding: 18px 0;
+    cursor: pointer;
+}
+.footer p span{
+    color: #f44336;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.enrol-student h1 span{
+    color: #f44336;
+}
+    @media(max-width:700px){
+        .dispay-text h1{
+            font-size: 30px;
+        }.nav-link ul li{
+            display: inline-block;
+        }.nav-link{
+            position: absolute;
+            background-color: #f44336;
+            height: 100vh;
+            width: 180;
+            text-align: center;
+            right: -200px;
+            top: 0;
+            z-index: 2;
+            width: 142px;
+            text-align: left;
+            font-size: 60px;
+            transition: 1s;
+        }  #menu-cross-logo{
+            display: block;
+            font-weight: 700;
+            font-size: 32px;
+            cursor: pointer;
+            margin: 10px;
+            color: #fff;
+            text-align: end;
+            padding: 8px;
+            margin-top: 8px;
+        }#menu-open-logo{
+            display: block;
+            font-weight: 700;
+            font-size: 32px;
+            cursor: pointer;
+            margin: 10px;
+            color: #fff;
+            text-align: end;
+            padding: 8px;
+            margin-top: 8px
+       
+        }nav h2{
+            width: 111%; 
+            font-size: 20px;
+        }.professor-row{
+            flex-direction: column;
+        }
+        .row{
+            flex-direction: column;
+        }
+        .clom h3 {
+            font-size: 17px;
+            margin: 10px 0;
+            text-align: center;
+        }.cource h1 {
+            color: black;
+            font-size: 27px;
+            font-family: system-ui;
+            font-weight: 700;
+            width: 100%;}
+            .cource p {
+                font-size: 13px;
+                color: #777;
+                padding: 20px;
+                line-height: 22px;
+                font-weight: 800;
+            }
+            .global h1 {
+            color: black;
+            font-size: 22px;
+            font-family: system-ui;
+            font-weight: 700;
+            width: 100%;}
+            .global p {
+                font-size: 13px;
+                color: #777;
+                padding: 20px;
+                line-height: 22px;
+                font-weight: 800;
+            }.facilites h1 {
+                color: black;
+                font-size: 22px;
+                font-family: system-ui;
+                font-weight: 700;
+                width: 100%;}
+                .facilites p {
+                    font-size: 13px;
+                    color: #777;
+                    padding: 20px;
+                    line-height: 22px;
+                    font-weight: 800;
+                }
+            .vist-btn{
+                font-size: 13px;
+                padding: 11px 15px;
+                margin-top: 30px;
+            }.row-global {
+                display: flex;
+                gap: 1.3rem;
+                flex-wrap: wrap;
+                padding: 37px;
+                margin-top: -23.9px;
+            }
+            .row-facilites {
+                display: flex;
+                gap: 1.3rem;
+                flex-wrap: wrap;
+                padding: 36px;
+                margin-top: -23.9px;
+            }.clom-facilites {
+                overflow: hidden;
+                box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+                border: 0.2rem solid black;
+                border-radius: 0.5rem;
+                flex: 1 1 21rem;
+                position: relative;
+            }.caption-img {
+                text-align: center;
+                font-size: 30px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                background: transparent;
+                /* top: 0; */
+                height: 100%;
+                transition: 0.5s;
+                top: -120px;
+                font-family: sans-serif;
+            }.facilites {
+                padding-top: 50px;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+            }.professor h1 {
+                color: black;
+                font-size: 22px;
+                font-family: system-ui;
+                font-weight: 700;
+                width: 100%;}
+                .professor p {
+                    font-size: 13px;
+                    color: #777;
+                    padding: 20px;
+                    line-height: 22px;
+                    font-weight: 800;
+                }.professor {
+                    padding-top: 50px;
+                    text-align: center;
+                    width: 80%;
+                    margin: auto;
+                }.professor-colm img {
+                    border-radius: 50%;
+                    height: 77px;
+                    margin-left: 0px;
+                    margin-right: 2px;
+                }.enrol-student h1{
+                    font-size: 23px;
+                    margin-bottom: 30px;
+                    padding: 0;
+                    color: #fff;
+                    font-family: sans-serif;
+                }.footer p span {
+                    color: #f44336;
+                    font-size: 10px;
+                    font-family: sans-serif;
+                    font-style: normal;}
+                
+            
+        }
+/* ----------------------ABOUT US NEXT pagE ------------------------------- */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.sub-header h1{
+    font-size: 85px;
+    font-style: italic;
+    text-shadow: 5px 4px black;
+}
+.about-colum{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+.about-colum img{
+    width: 100%;
+}
+.about-colum h1{
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 39px;
+   
+}
+.about-colum p{
+    padding: 15px 0 25px;
+    font-size: 18px;
+    color: #777;
+}
+.about-us-section{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.row-about{
+    display: flex;
+}
+.about-btn{
+    border-radius: 7px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    padding: 17px 27px;
+    border: 1px solid wheat;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 500;
+    border: 2px solid gray;
+}
+.about-btn:hover{
+    color: white;
+    box-shadow: 4px 0px 34px 14px #f44336;
+    background-color: #f44336;
+    transition: 0.6s;
+    border: transparent;
+}
+.blog-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.blog-header h1{
+    font-size: 59px;
+    font-style: italic;
+    text-shadow: 5px 4px black;
+    margin-top: 22px;
+}
+.blog-header span{
+
+    color: #f44336;
+}
+.blog-container{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-row{
+    display: flex;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.blog-left h2{
+    color: black;
+    font-weight: 700;
+    margin: 30px 0;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.blog-left p{
+    color: #777;
+    padding: 0;
+    font-family: sans-serif;
+}
+.blog-right{
+    flex-basis: 32%;
+    margin-left: 37px;
+}
+.blog-right h3{
+    color: white;
+    background-color: #f44336;
+    padding: 7px 0;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 28px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 1px black;
+}
+.blog-right div{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+ box-sizing: border-box;
+}.blog-right span{
+    font-size: 22px;
+    font-family: monospace;
+}
+.comment{
+    border: 2px solid #777;
+    margin: 50px auto;
+   padding: 10px 20px;
+   box-shadow: 0px 0px 19px -1px grey
+}
+.comment h3{
+    color: white;
+    background-color: #f44336;
+    padding: 7px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 28px;
+    border-radius: 5px;
+}
+.comment-form input , .comment-form textarea{
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        background-color: #f0f0f0;
+}
+.comment-form button{
+    margin:10px 2px ;
+}
+.from-btn{
+    border-radius: 7px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    padding: 17px 27px;
+    border: 1px solid wheat;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 500;
+
+    margin-top: 24px;
+    width: 100%;
+    color: red;
+}
+.comment-form textarea:hover{
+   color: white;
+    background-color:#f44336 ;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+.comment-form input:hover{
+    color: white;
+    background-color:#f44336 ;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+.from-btn:hover{
+    color: white;
+    /* box-shadow: 0px 0px 6px 5px #f44336; */
+    background-color: #f44336;
+    transition: 0.6s;
+    border: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    transition: 0.5s;
+
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px ;
+}
+
+.contact-cloum{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-cloum div{
+    display: flex;
+    margin-bottom: 40px;
+}
+.location iframe{
+    width: 100%;
+}
+#contact-logo{
+    font-size: 20px;
+    color: #f44336;
+    margin-right: 16px;
+}
+.contact-cloum h5{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+.contact-cloum p{
+    
+    color: #777;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 22px;
+}.contact-us{
+width: 80%;
+margin: auto;
+padding: 60px 0;
+}
+@media(max-width:700px) {
+.about-colum p {
+    padding: 15px 0 25px;
+    font-size: 16px;
+    color: #777;
+}.about-colum h1 {
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 29px;
+}.row-about {
+    display: flow-root;
+}.sub-header h1 {
+    font-size:60px;
+    font-style: italic;
+    text-shadow: 5px 4px black;
+    margin-top: 46px;
+}.blog{
+    font-size: 39px;
+    font-style: italic;
+    text-shadow: 5px 4px black;
+    margin-top: 62px;
+}.blog-header h1{
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 5px 4px black;
+    margin-top: 22px;
+}.blog-row{
+    display:flow-root;
+}.blog-right {
+    flex-basis: 32%;
+    margin-left: 0px;
+}.comment h3 {
+    font-size: 26px;
+}.blog-left h2{
+    font-size: 25px;
+}
+}
+
